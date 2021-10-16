@@ -10,30 +10,33 @@ public class Calculator {
         System.out.println("Введите целое цифровое значение operand2 ");
         int operand2 = scan.nextInt();
         System.out.println("Введите допустимый знак арифметической операции + - * /");
-        ???????
-        String symbol = scan.nextInt();;  или след. назначение символа и вместо symbol правильно написать sign
-        int symbol = scan.nextInt();
-        switch (symbol) {
+        String sign = scan.next();
+        double result;
+        switch (sign) {
             case "+":
-                System.out.println("operand1+operand2");
+                result=operand1+operand2;
+                System.out.println(result);
                 break;
             case "-":
-                System.out.println("operand1-operand2");
+                result=operand1-operand2;
+                System.out.println(result);
                 break;
             case "*":
-                System.out.println("operand1*operand2");
+                result=operand1*operand2;
+                System.out.println(result);
                 break;
-            case "/":
-                if (operand2 < 0) {
-                    System.out.print("Ошибка! Деление на ноль невозможно, ЕСЛИ ВЫ НЕ КЕРНЕС");
-                } else {
-                    System.out.print("operand1/operand2");
+            case "/": {
+                if (operand2 == 0) {
+                    System.out.print("Ошибка! Деление на ноль невозможно");}
+                else
+                {result=((double)operand1)/operand2;
+                    System.out.print(result);}
                 }
                 break;
             default:
                 System.out.println("Неверная операция, введите допустимое арифметическое действие");
         }
-        System.out.println("\nРезультат: \n");
-        System.out.println(" operand1 =" + operand1 + " operand2 = " + operand2 + "symbol = " + symbol);
     }
 }
+
+

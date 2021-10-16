@@ -8,21 +8,20 @@ public class Interval {
         int operand;
         System.out.println("Введите целое число от 0 до 100");
         operand = scan.nextInt();
-        if ( operand = 0 ){
+        if (operand >= 0 && operand <= 14){
             System.out.println("диапазон [0-14]");
-        };
-        else if (operand >=1 || operand <=14){
-            System.out.println("диапазон [0-14]");
-        };
-        else if (operand >=15 || operand <=35){
+        }
+        else if (operand >= 15 && operand <= 35){
             System.out.println("диапазон [15-35]");
-        };
-        else if(operand >=36 || operand <=50){
+        }
+        else if(operand >=36 && operand <=50){
             System.out.println("диапазон [36-50]");
-        };
-        else if(operand >=51 || operand <=100){
+        }
+        else if(operand >=51 && operand <=100){
             System.out.println("диапазон [51-100]");
-        };
+        }
+        else {
+            System.out.println("Ошибка! Число не попало не в один диапазон");
+        }
     }
-    )
 }
