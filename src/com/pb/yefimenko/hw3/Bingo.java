@@ -14,7 +14,7 @@ public class Bingo {
             attempt++;
             System.out.println("Попытка"+attempt+":");
             counter = in.nextInt();
-            if (counter.equals("exit")) {
+            if (counter==("exit")) {
                 break;
             }
             if (counter<0 | counter>100) {

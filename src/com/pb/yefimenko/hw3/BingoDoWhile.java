@@ -13,7 +13,7 @@ public class BingoDoWhile {
         counter = in.nextInt();
         do {attempt++;
             System.out.println("Попытка" + attempt + ":");
-            if (counter.equals("exit")) {
+            if (counter==("exit")) {
                 break;
             }
             if (counter < 0 | counter > 100) {
