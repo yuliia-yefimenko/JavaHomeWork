@@ -25,7 +25,7 @@ public class Bingo {
                 System.out.println("Не угадали");
                 continue;
             }
-            if (counter=25){
+            if (counter==25){
                 System.out.println("Урра!Вы угадали с"+attempt+"попытки");
                 break;
             }
