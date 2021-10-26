@@ -8,7 +8,7 @@ public class Bingo {
         System.out.println("Отгадайте целое число в диапазоне от 0 до 100");
         System.out.println("Для выхода из программы введите число меньше 0");
         Random random = new Random();
-        int counter = (int) ( Math.random() * 101 );
+        int counter = random.nextInt(101);
         final int MAX_ATTEMPT = 101; // ведь вариантов от 0 до 100
         int attempt = 0;
         Scanner in = new Scanner(System.in);
