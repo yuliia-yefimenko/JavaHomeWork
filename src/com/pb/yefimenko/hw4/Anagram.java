@@ -14,14 +14,16 @@ public class Anagram {
         String s1 = scan.nextLine();
         System.out.println("Введите вторую строку");
         String s2= scan.nextLine();
-        String format(String[] args);
+                            //String format(String[] args);
         string s1 = string s1.replaceAll("[^\\da-zA-Zа-яёА-ЯЁ]", "");
         strings2 = strings2.replaceAll("[^\\da-zA-Zа-яёА-ЯЁ]", "");
         String s1 = s1.length();
         String s2 = s2.length();
+        char[] c1 = s1.toCharArray();
+        char[] c2 = s2.toCharArray();
         if ( s1.length() != s2.length()) {
             return false;}
-        else if (s1.length() == s2.length()){
+        else if (c1 == c2){
             return true
                     System.out.println("Слова анаграммы");
         }
