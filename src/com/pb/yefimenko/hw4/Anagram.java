@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Anagram {
     public static String format(String, Object... args)
     String cleanLine = string.replaceAll("[\\W]", "");
+    Character.isLetterOrDigit
+            st = st.replaceAll("\\s","")
 }
     public static void main(String[] args){
     Scanner scan = new Scanner(System.in);
