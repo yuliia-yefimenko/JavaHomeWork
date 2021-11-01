@@ -8,37 +8,14 @@ public class Array {
         Scanner scan = new Scanner(System.in);
         int [] array = new int[10];
         int i = array.length;
-        int sum = 0;
-        array [0]=scan.nextInt();
-        System.out.println(array[0]);
-        array [1]=scan.nextInt();
-        System.out.println(array[1]);
-        array [2]=scan.nextInt();
-        System.out.println(array[2]);
-        array [3]=scan.nextInt();
-        System.out.println(array[3]);
-        array [4]=scan.nextInt();
-        System.out.println(array[4]);
-        array [5]=scan.nextInt();
-        System.out.println(array[5]);
-        array [6]=scan.nextInt();
-        System.out.println(array[6]);
-        array [7]=scan.nextInt();
-        System.out.println(array[7]);
-        array [8]=scan.nextInt();
-        System.out.println(array[8]);
-        array [9]=scan.nextInt();
-        System.out.println(array[9]);    // упрощаем ТАК МОЖНО? Ведь я хочу чтоб вывелись данные, что ввел пользователь
-        for( int i = 0; i < array.length; i++) {  // или вывод на экран циклом
-            System.out.println(array[i]);
-        }
-        for ( int i = 0; i < array.length){   // сумма всего массива  А КАК МОЖНО УПРОСТИТЬ?
-            sum = (array [1] + array [2] + array [3] + array [4] + array [5] + array [6] + array [7] + array [8]  + array [9] );
-            System.out.println("Сумма" +sum );
-        }
-        if ( int [i] > 0) {
-            sum:=sum+i;
-            System.out.println("Сумма положительных элементов массива" + sum);
+        int sum = 0,posit = 0;;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scan.nextInt();
+            sum = sum + array[i];
+            if (array[i] >0) {
+                posit = posit +1;
+                System.out.println("Сумма положительных элементов массива" + sum);
+            }
         }
         boolean isSorted = false; // пузырьковая сортировка
         int x;
