@@ -12,15 +12,12 @@ public class Bingo {
         int counter1 = random.nextInt(101);
         System.out.println("Программа загадала целое число в диапазоне от 0 до 100");
         System.out.println("Введите предполагаемое число в диапазоне от 0 до 100");
-        int counter2 = in.nextInt();
         final int MAX_ATTEMPT = 101; // ведь вариантов от 0 до 100
         int attempt = 0;
         while (attempt<MAX_ATTEMPT){
             attempt++;
             System.out.println("Попытка"+attempt+":");
-            if (counter2 <0) {
-                break;
-            }
+            int counter2 = in.nextInt();
             if (counter2 < 0 | counter2 >100) {
                 System.out.println("Число не входит в диапазон");
                 break;
