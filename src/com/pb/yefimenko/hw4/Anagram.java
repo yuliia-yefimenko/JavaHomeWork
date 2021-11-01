@@ -1,4 +1,4 @@
-package com.pb.yefimenko.hw4;
+/*package com.pb.yefimenko.hw4;
 
 import java.util.Scanner;
 
@@ -37,3 +37,4 @@ public class Anagram {
 
         }
 }
+*/
