@@ -29,7 +29,8 @@ public class Reader {
 
         String takeBook(){
             for (x=book1;x<ArrayBook.length;x++),(y=r1,y<R.length; y++){
-            return "[ Читатель"+y+"взял книгу"+ x+"название:"+x.nazva+", автор: "+x.avtor+", год: "+x.year+"]";}
+            return System.out.println("[ Читатель"+y+"взял книгу"+ x+"название:"+x.nazva+", автор: "+x.avtor+
+                    ", год: "+x.year+"]");}
         }
         String returnBook(){
             return "[ Вернул книгу название: "+nazva+", автор: "+avtor+", год: "+year+"]";
