@@ -25,10 +25,10 @@ public class Reader {
     Reader r3= new Reader( "Васечкин В.В.",3333, "гуманитарный",
                 "10.10.2020", 0631234567 );
     public void takeBook (int bookCount) {
-        System.out.println(this.name + " взял " + bookCount + " книг");
+        return System.out.println(this.name + " взял " + bookCount + " книг");
     }
     public void returnBook(int bookCount){
-        System.out.println(this.name + " вернул " + bookCount + " книг");
+        return System.out.println(this.name + " вернул " + bookCount + " книг");
         }
     }
 
