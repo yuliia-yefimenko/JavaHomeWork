@@ -3,10 +3,10 @@ package com.pb.yefimenko.hw5;
 public class Library {
     public static void main(String[] args) {
     Book[] ArrayBook = {book1, book2, book3};
+    Reader[] R ={r1,r2,r3 };
     for (Book x = ArrayBook) {
         System.out.println(x.nazva+x.avtor+x.year());
     }
-    Reader[] R ={r1,r2,r3 };
     for (Reader y = R) {
         System.out.println(y.name+y.biletNumber+y.fakultet+y.dateOfBirth+y.telephone());}
 
