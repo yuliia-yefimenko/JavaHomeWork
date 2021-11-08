@@ -14,21 +14,12 @@ public class Reader {
         this.dateOfBirth = dateOfBirth;
         this.telephone = telephone;
     }
-    Book book1 = new Book ("Приключения","Иванов А.А.",2000);
-    Book book2 = new Book ("Словарь","Сидоров Б.Б.",2010);
-    Book book3 = new Book ("Энциклопедия","Петров В.В.",2020);
 
-    Reader r1= new Reader( "Иванов И.И.",1111, "инженерный",
-                "10.10.2000", 0991234567 );
-    Reader r2= new Reader( "Петров П.П.",2222, "экономический",
-                "10.10.2010",0501234567 );
-    Reader r3= new Reader( "Васечкин В.В.",3333, "гуманитарный",
-                "10.10.2020", 0631234567 );
     public void takeBook (int bookCount) {
-        return System.out.println(this.name + " взял " + bookCount + " книг");
+        System.out.println(this.name + " взял " + bookCount + " книг");
     }
     public void returnBook(int bookCount){
-        return System.out.println(this.name + " вернул " + bookCount + " книг");
+        System.out.println(this.name + " вернул " + bookCount + " книг");
         }
     }
 
