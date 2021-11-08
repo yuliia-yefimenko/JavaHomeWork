@@ -14,13 +14,24 @@ public class Library {
                 "10.10.2020","0671234567");
     Book[] ArrayBook = {book1, book2, book3};
     Reader[] R ={r1,r2,r3 };
-    for (Book x : ArrayBook) {
+        r1.takeBook(book1,book2);
+        r2.takeBook(book3);
+        r3.takeBook();
+
+    public void takeBook(String ... nazva) {
+        System.out.println(this.name + " взял книги: "+ this.nazva+" автора: "+this.avtor);
+        for(String name: nazva) {
+            System.out.println(name);
+            }}
+    public void takeBook(String ... nazva) {
+        System.out.println(this.name + " вернул книги: "+ this.nazva+" автора: "+this.avtor);
+        for(String name: nazva) {
+            System.out.println(name);
+            }}
+        for (Book x : ArrayBook) {
         System.out.println(x.nazva+x.avtor+x.year);}
     for (Reader y : R) {
         System.out.println(y.name+y.biletNumber+y.fakultet+y.dateOfBirth+y.telephone);}
-    r1.takeBook(book1,book2);
-    r2.takeBook(book3);
-    r3.takeBook();
 
 
     for ((x=book1;x<ArrayBook.length;x++),(y=r1,y<R.length; y++)){

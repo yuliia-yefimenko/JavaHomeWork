@@ -9,7 +9,6 @@ public class Reader {
 
     public Reader(String name, int biletNumber, String fakultet, String dateOfBirth, String telephone) {
         this.name = name;
-        this.name = name;
         this.biletNumber = biletNumber;
         this.fakultet = fakultet;
         this.dateOfBirth = dateOfBirth;
@@ -18,4 +17,4 @@ public class Reader {
         System.out.println(this.name + " взял " + bookCount + " книг");}
     public void returnBook(int bookCount){
         System.out.println(this.name + " вернул " + bookCount + " книг");}
-    }
+}
