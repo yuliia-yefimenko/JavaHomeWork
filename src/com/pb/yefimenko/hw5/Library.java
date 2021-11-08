@@ -7,23 +7,26 @@ public class Library {
         Book book3 = new Book ("Энциклопедия","Петров В.В.",2020);
 
         Reader r1= new Reader( "Иванов И.И.",1111, "инженерный",
-                "10.10.2000", 0991234567 );
+                "10.10.2000","0991234567");
         Reader r2= new Reader( "Петров П.П.",2222, "экономический",
-                "10.10.2010",0501234567 );
+                "10.10.2010","0501234567");
         Reader r3= new Reader( "Васечкин В.В.",3333, "гуманитарный",
-                "10.10.2020", 0631234567 );
+                "10.10.2020","0671234567");
     Book[] ArrayBook = {book1, book2, book3};
     Reader[] R ={r1,r2,r3 };
-    for (Book x = ArrayBook) {
-        System.out.println(x.nazva+x.avtor+x.year());
-    }
-    for (Reader y = R) {
-        System.out.println(y.name+y.biletNumber+y.fakultet+y.dateOfBirth+y.telephone());}
+    for (Book x : ArrayBook) {
+        System.out.println(x.nazva+x.avtor+x.year);}
+    for (Reader y : R) {
+        System.out.println(y.name+y.biletNumber+y.fakultet+y.dateOfBirth+y.telephone);}
+    r1.takeBook(book1,book2);
+    r2.takeBook(book3);
+    r3.takeBook();
 
-    for (x=book1;x<ArrayBook.length;x++),(y=r1,y<R.length; y++){
+
+    for ((x=book1;x<ArrayBook.length;x++),(y=r1,y<R.length; y++)){
         return System.out.println("[ Читатель"+y+"взял книгу"+ x+"название:"+x.nazva+", автор: "
                 +x.avtor+ ", год: "+x.year+"]")}
-    for (x=book1;x<ArrayBook.length;x++),(y=r1,y<R.length; y++){
+    for ((x=book1;x<ArrayBook.length;x++),(y=r1,y<R.length; y++)){
         return System.out.println("[ Читатель"+y+"взял книгу"+ x+"название:"+x.nazva+", автор: "
                 +x.avtor+ ", год: "+x.year+"]");}
     }
