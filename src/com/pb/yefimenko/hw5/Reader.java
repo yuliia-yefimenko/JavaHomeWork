@@ -20,15 +20,17 @@ public class Reader {
     public void takeBook (String ... nazva) {
         System.out.println(this.name + " взял книги: ");
         for(String name: nazva) {
-            System.out.println(name);
-        }}
+            System.out.println(name);}}
     public void returnBook (String ... nazva) {
         System.out.println(this.name + " вернул книги: ");
         for(String name: nazva) {
-            System.out.println(name);
-        }}
+            System.out.println(name);}}
     public void takeBook(Book... books) {
         System.out.println(this.name + " взял книги: ");
+        for(Book book: books) {
+            System.out.println(book.getNazva() + " " + book.getAvtor() + " " + book.getYear());}}
+    public void returnBook(Book... books) {
+        System.out.println(this.name + " вернул книги: ");
         for(Book book: books) {
             System.out.println(book.getNazva() + " " + book.getAvtor() + " " + book.getYear());
         }

@@ -17,5 +17,20 @@ public class Library {
         r1.takeBook(book1);
         r2.takeBook(book3);
         r3.takeBook(book2);
+        r3.returnBook(book2);
+        r2.returnBook(book3);
+        r1.returnBook(book1);
+        r1.takeBook(1);
+        r2.takeBook(1);
+        r3.takeBook(1);
+        r1.returnBook(1);
+        r2.returnBook(1);
+        r3.returnBook(1);
+        r1.takeBook(book1.getNazva());
+        r2.takeBook(book3.getNazva());
+        r3.takeBook(book2.getNazva());
+        r1.returnBook(book1.getNazva());
+        r2.returnBook(book3.getNazva());
+        r3.returnBook(book2.getNazva());
     }
 }

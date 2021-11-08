@@ -13,3 +13,4 @@ public class Book {
     public String getAvtor() {return avtor;}
     public int getYear() {return year;}
 }
+
